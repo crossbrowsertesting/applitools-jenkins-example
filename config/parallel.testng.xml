@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="5" parallel="tests">
+    <test name="SingleTest1">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="firefox63"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/> 
+        </classes>
+    </test>
+    <test name="SingleTest2" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="edge17"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest3" thread-count="4" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="edge16"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest4" thread-count="4" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="chrome69mac"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest5" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="chrome69win"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest6" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="firefox63"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest7" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="edge17"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest8" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="edge16"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest9"  >
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="chrome69win"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+    <test name="SingleTest10" parallel="tests">
+        <parameter name="config" value="parallel.conf.json"/>
+        <parameter name="environment" value="chrome69mac"/>
+        <classes>
+            <class name="com.cbt.SingleTest"/>
+        </classes>
+    </test>
+</suite>

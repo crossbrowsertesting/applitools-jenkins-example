@@ -1,0 +1,17 @@
+{
+  "server": "hub.crossbrowsertesting.com",
+  "user": "",
+  "key": "",
+
+  "capabilities": {
+    "build": "1.0",
+    "name": "Single Example"
+  },
+
+  "environments": {
+    "chrome": {
+      "browser": "chrome",
+      "record_video": "true"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "server": "hub.crossbrowsertesting.com",
+  "user": "",
+  "key": "",
+
+  "capabilities": {
+    "build": "1.0",
+    "name": "Parallel Example"
+  },
+
+  "environments": {
+    "firefox63": {
+      "browser": "Firefox",
+      "version": "11",
+      "platform": "Mac OS X 10.13"
+    },
+    "edge17": {
+      "browser": "Edge",
+      "version": "17"
+    },
+    "edge16": {
+      "browser": "Edge",
+      "version": "16"
+    },
+    "chrome69mac": {
+      "browser": "Chrome",
+      "platform": "Mac OS X 10.13",
+      "version": "69"
+    },
+    "chrome69win": {
+      "browser": "Chrome",
+      "platform": "Windows 10",
+      "version": "69"
+    }
+  }
+}
